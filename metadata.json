@@ -1,0 +1,7 @@
+{
+  "name": "CivicFlow - Smart Civic Reporting",
+  "description": "A futuristic, IoT-integrated platform for citizens, workers, and municipal authorities to manage urban issues with AI-assisted prioritization and real-time sensor verification.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
