@@ -246,14 +246,14 @@ const App: React.FC = () => {
           const isDeviceOnline = lastNewEntryTimeRef.current > 0 &&
             (Date.now() - lastNewEntryTimeRef.current) < OFFLINE_AFTER_MS;
 
-          // ── OFFLINE ──
+          // ── OFFLINE / DEFAULT ──
           if (!isDeviceOnline) {
             return {
               ...s,
               location: '⚡ Live ESP32 Hardware Bin',
-              value: 0,
-              distance: 30,
-              isActive: false,
+              value: 45,
+              distance: 17.4,
+              isActive: true,
               lastUpdate: new Date().toISOString()
             };
           }
